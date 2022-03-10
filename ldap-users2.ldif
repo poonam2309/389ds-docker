@@ -1,0 +1,242 @@
+dn: cn=admin,ou=Groups,dc=example,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: admin
+description: The Business Users
+uniqueMember: uid=shailendra,ou=People,dc=example,dc=com
+uniqueMember: uid=maker1,ou=People,dc=example,dc=com
+uniqueMember: uid=maker2,ou=People,dc=example,dc=com
+uniqueMember: uid=maker3,ou=People,dc=example,dc=com
+uniqueMember: uid=maker4,ou=People,dc=example,dc=com
+uniqueMember: uid=checker1,ou=People,dc=example,dc=com
+uniqueMember: uid=checker2,ou=People,dc=example,dc=com
+uniqueMember: uid=checker3,ou=People,dc=example,dc=com
+uniqueMember: uid=checker4,ou=People,dc=example,dc=com
+
+# kie-server, Groups, example.com
+dn: cn=kie-server,ou=Groups,dc=example,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: kie-server
+description: The Business Users
+uniqueMember: uid=poonam,ou=People,dc=example,dc=com
+uniqueMember: uid=mohit,ou=People,dc=example,dc=com
+uniqueMember: uid=shailendra,ou=People,dc=example,dc=com
+uniqueMember: uid=maker1,ou=People,dc=example,dc=com
+uniqueMember: uid=maker2,ou=People,dc=example,dc=com
+uniqueMember: uid=maker3,ou=People,dc=example,dc=com
+uniqueMember: uid=maker4,ou=People,dc=example,dc=com
+uniqueMember: uid=checker1,ou=People,dc=example,dc=com
+uniqueMember: uid=checker2,ou=People,dc=example,dc=com
+uniqueMember: uid=checker3,ou=People,dc=example,dc=com
+uniqueMember: uid=checker4,ou=People,dc=example,dc=com
+
+# rest-all, Groups, example.com
+dn: cn=rest-all,ou=Groups,dc=example,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: rest-all
+description: The Business Users
+uniqueMember: uid=poonam,ou=People,dc=example,dc=com
+uniqueMember: uid=mohit,ou=People,dc=example,dc=com
+uniqueMember: uid=shailendra,ou=People,dc=example,dc=com
+
+dn: cn=maker,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: maker
+description: The group of cluster adminstrators
+member: uid=maker1,ou=People,dc=example,dc=com
+member: uid=maker2,ou=People,dc=example,dc=com
+member: uid=maker3,ou=People,dc=example,dc=com
+member: uid=maker4,ou=People,dc=example,dc=com
+
+dn: cn=checker,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: checker
+description: The group of Managers
+member: uid=checker1,ou=People,dc=example,dc=com
+member: uid=checker2,ou=People,dc=example,dc=com
+member: uid=checker3,ou=People,dc=example,dc=com
+member: uid=checker4,ou=People,dc=example,dc=com
+
+
+dn: uid=maker1,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: extensibleObject
+objectClass: uidObject
+objectClass: inetOrgPerson
+objectClass: top
+cn: maker1
+sn: Berger
+uid: maker1
+givenName: David Berger
+mail: david.berger@example.com
+member: cn=maker,ou=Groups,dc=example,dc=com
+member: cn=admin,ou=Groups,dc=example,dc=com
+member: cn=kie-server,ou=Groups,dc=example,dc=com
+member: cn=rest-all,ou=Groups,dc=example,dc=com 
+mobile: 9900001103
+ou: People
+userPassword: password
+
+dn: uid=shailendra,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: extensibleObject
+objectClass: uidObject
+objectClass: inetOrgPerson
+objectClass: top
+cn: shailendra
+sn: Berger
+uid: shailendra
+givenName: David Berger
+mail: david.berger@example.com
+member: cn=maker,ou=Groups,dc=example,dc=com
+member: cn=admin,ou=Groups,dc=example,dc=com
+member: cn=kie-server,ou=Groups,dc=example,dc=com
+member: cn=rest-all,ou=Groups,dc=example,dc=com
+mobile: 9900001103
+ou: People
+userPassword: sk@123
+
+dn: uid=maker2,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: extensibleObject
+objectClass: uidObject
+objectClass: inetOrgPerson
+objectClass: top
+cn: maker2
+sn: Berger
+uid: maker2
+givenName: David Berger
+mail: david.berger@example.com
+member: cn=maker,ou=Groups,dc=example,dc=com
+member: cn=admin,ou=Groups,dc=example,dc=com
+member: cn=kie-server,ou=Groups,dc=example,dc=com
+mobile: 9900001103
+ou: People
+userPassword: password
+
+dn: uid=maker3,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: extensibleObject
+objectClass: uidObject
+objectClass: inetOrgPerson
+objectClass: top
+cn: maker3
+sn: Berger
+uid: maker3
+givenName: David Berger
+mail: david.berger@example.com
+member: cn=maker,ou=Groups,dc=example,dc=com
+member: cn=admin,ou=Groups,dc=example,dc=com
+member: cn=kie-server,ou=Groups,dc=example,dc=com
+mobile: 9900001103
+ou: People
+userPassword: password
+
+dn: uid=maker4,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: extensibleObject
+objectClass: uidObject
+objectClass: inetOrgPerson
+objectClass: top
+cn: maker4
+sn: Berger
+uid: maker4
+givenName: David Berger
+mail: david.berger@example.com
+member: cn=maker,ou=Groups,dc=example,dc=com
+member: cn=admin,ou=Groups,dc=example,dc=com
+member: cn=kie-server,ou=Groups,dc=example,dc=com
+mobile: 9900001103
+ou: People
+userPassword: password
+
+
+dn: uid=checker4,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: extensibleObject
+objectClass: uidObject
+objectClass: inetOrgPerson
+objectClass: top
+cn: checker4
+sn: Berger
+uid: checker4
+givenName: David Berger
+mail: david.berger@example.com
+member: cn=checker,ou=Groups,dc=example,dc=com
+member: cn=admin,ou=Groups,dc=example,dc=com
+member: cn=kie-server,ou=Groups,dc=example,dc=com
+mobile: 9900001103
+ou: People
+userPassword: password
+
+
+
+
+dn: uid=checker3,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: extensibleObject
+objectClass: uidObject
+objectClass: inetOrgPerson
+objectClass: top
+cn: checker3
+sn: Berger
+uid: checker3
+givenName: David Berger
+mail: david.berger@example.com
+member: cn=checker,ou=Groups,dc=example,dc=com
+member: cn=admin,ou=Groups,dc=example,dc=com
+member: cn=kie-server,ou=Groups,dc=example,dc=com
+mobile: 9900001103
+ou: People
+userPassword: password
+
+dn: uid=checker2,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: extensibleObject
+objectClass: uidObject
+objectClass: inetOrgPerson
+objectClass: top
+cn: checker2
+sn: Berger
+uid: checker2
+givenName: David Berger
+mail: david.berger@example.com
+member: cn=checker,ou=Groups,dc=example,dc=com
+member: cn=admin,ou=Groups,dc=example,dc=com
+member: cn=kie-server,ou=Groups,dc=example,dc=com
+mobile: 9900001103
+ou: People
+userPassword: password
+
+
+dn: uid=checker1,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: extensibleObject
+objectClass: uidObject
+objectClass: inetOrgPerson
+objectClass: top
+cn: checker1
+sn: Berger
+uid: checker1
+givenName: David Berger
+mail: david.berger@example.com
+member: cn=checker,ou=Groups,dc=example,dc=com
+member: cn=admin,ou=Groups,dc=example,dc=com
+member: cn=kie-server,ou=Groups,dc=example,dc=com
+mobile: 9900001103
+ou: People
+userPassword: password
+
